@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './styles/style.css';
-import ShoppingCart from './Components/shoppingcart';
+import ToDoList from './Components/todolist';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ShoppingCart />
+    <ToDoList />
   </React.StrictMode>,
   document.getElementById('root')
 );

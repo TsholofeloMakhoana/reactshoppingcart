@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TodoItem from './enteriesitem'
 
 
-class ShoppingCart extends Component {
+class ToDoList extends Component {
   
   constructor(props) {
     super(props);
@@ -21,8 +21,8 @@ addItem(e){
 
     var newItem = {
       //not sure how to add new line on the following
-      text : 'ProductTitle: ' +this._itemtitle.value 
-            +'\n Quantity: '+this._itemquality.value
+      text : 'Task: ' +this._itemtitle.value 
+            +'\n TimeEstimated: '+this._itemquality.value
             +'\n Description: '+this._description.value,
       key : Date.now()
     };
@@ -60,7 +60,7 @@ deleteItem(key){
           
             <div class="container">
               <fieldset>
-                <legend>Shopping List (Week 3 Task)</legend>
+                <legend>ToDo List (Week 4 Task)</legend>
       
                  <form onSubmit={this.addItem}> 
                  <div class="row">
@@ -75,7 +75,7 @@ deleteItem(key){
                   </div>
                  
                 </div>
-                <button id="add" class="btn">add item</button>
+                <button id="add" class="btn">ToDo List</button>
                 </form>   
 
             <fieldset>
@@ -96,4 +96,4 @@ deleteItem(key){
     }
 }
  
-export default ShoppingCart;
+export default ToDoList;
