@@ -11,7 +11,7 @@ class ToDoList extends Component {
       items: []
     };
 
-    
+
     this.addItem = this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
 }
@@ -68,7 +68,7 @@ deleteItem(key){
               
                   <div class="col-50"><br/>
                     <input type="text" ref={(a)=>this._itemtitle = a } id="itemtitle" name="itemtitle" placeholder="Item title"/>
-                    <input type="text" ref={(a)=>this._itemquality = a } id="quantity" name="quantity" placeholder="Quantity"/>
+                    <input type="text" ref={(a)=>this._itemquality = a } id="quantity" name="quantity" placeholder="TimeEstimated"/>
                   </div>
                   <div class="col-50"> </div>
                   <div class="col-50">
